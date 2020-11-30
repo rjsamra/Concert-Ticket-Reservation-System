@@ -100,7 +100,7 @@ class formBuilder
                     $err_msg="Enter a valid $label";
                     break;
                 case "mobile":
-                    $expression='/^[6]{1}[9]{1}[0-9]{8}$/';
+                    $expression='//';
                     $err_msg="Enter a valid $label";
                     break;
                     //https://stackoverflow.com/questions/45094533/php-regex-for-greek-mobile-phone-with-prefix-69

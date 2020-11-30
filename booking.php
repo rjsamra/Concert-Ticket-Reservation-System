@@ -97,7 +97,7 @@ if(!isset($_SESSION['user']))
 											Amount
 										</td>
 										<td id="amount" style="font-weight:bold;font-size:18px">
-											€ <?php echo $screen['charge'];?>
+											Rs <?php echo $screen['charge'];?>
 										</td>
 									</tr>
 									<tr>
@@ -123,7 +123,7 @@ if(!isset($_SESSION['user']))
 	$('#seats').change(function(){
 		var charge=<?php echo $screen['charge'];?>;
 		amount=charge*$(this).val();
-		$('#amount').html("€ "+amount);
+		$('#amount').html("Rs "+amount);
 		$('#hm').val(amount);
 	});
 </script>

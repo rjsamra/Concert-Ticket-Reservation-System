@@ -14,7 +14,7 @@ extract($_POST);
 $useramount2=mysqli_query($con,"select  * from tbl_registration where user_id='".$_SESSION['user']."'");
 $user2=mysqli_fetch_array($useramount2);
 $bookingAmount =$_SESSION['amount'];
-if($otp=="123456" && ($user2['totalAmount'] >= $_SESSION['amount'] ))
+if($otp=="" && ($user2['totalAmount'] >= $_SESSION['amount'] ))
 {
     $bookid="BKID".rand(1000000,9999999);
     $tickid="TICKID".rand(1000000,9999999);

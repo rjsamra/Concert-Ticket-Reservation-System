@@ -215,7 +215,7 @@ label {
 	$('#seats').change(function(){
 		var charge=<?php echo $screen['charge'];?>;
 		amount=charge*$(this).val();
-		$('#amount').html("€ "+amount);
+		$('#amount').html("Rs "+amount);
 		$('#hm').val(amount);
 	});
 </script>

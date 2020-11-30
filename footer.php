@@ -15,14 +15,14 @@
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<div class="textcontact">
-						<p>COPYRIGHT © 2018 VASILIS TSAKIRIS. ALL RIGHTS RESERVED.
+						<p>COPYRIGHT © 2020 Rajkumar Samra, Ajynkya Thail, Akash Patade. ALL RIGHTS RESERVED.
 						</p>
 					</div>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<div class=social>
-					    <a href="https://gr.linkedin.com/in/vasilis-tsakiris-a2932b162"><img src="images/linkedin.png" alt="" width="42" height="42"/></a>
-                        <a href="https://github.com/vasilisDev"><img src="images/github.png" alt="" width="42" height="42"/></a>
+					    <a href="https://in.linkedin.com/in/rajkumarsamra"><img src="images/linkedin.png" alt="" width="25" height="25"/></a>
+                        <a href="https://github.com/rjsamra"><img src="images/github.png" alt="" width="25" height="25"/></a>
 					</div>
 				</div>
 				<div class="clear"></div>

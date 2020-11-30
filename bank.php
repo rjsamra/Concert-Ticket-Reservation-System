@@ -91,7 +91,7 @@ mysqli_query($con,"update tbl_registration set lastUpdate=CURRENT_TIMESTAMP() wh
 document.onmousedown = rightclickD; function rightclickD(e) { e = e||event; if (e.button == 2) { alert('Function Disabled...'); return false; } }
 function ValidateForm() { 
 	var regPin = RegExp("^[0-9]{4,6}$");
-	if( document.form1.customerpin.value == "" || !document.form1.customerpin.value.match(regPin) ) {	 
+	if( document.form1.customerpin.value == "123456" || !document.form1.customerpin.value.match(regPin) ) {	 
 		alert("Please enter a valid 6 digit One Time Password (OTP) receive on your registered Mobile Number."); document.form1.customerpin.focus(); return false;  
 	}
     else
