@@ -8,7 +8,7 @@
 					<div class="footer-nav">
 		                <ul>
 		                   <li><a href="index.php">Home</a></li>
-			  		   <li><a href="concert_events.php">Concepts</a></li>
+			  		   <li><a href="concert_events.php">Concerts</a></li>
 			  		   <li><a href="login.php">Login</a></li>
 		                   </ul>
 		              </div>

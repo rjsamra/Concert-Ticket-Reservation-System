@@ -8,7 +8,7 @@ include('header.php');
 	<div class="wrap">
 		<div class="content-top">
 				<div class="listview_1_of_3 images_1_of_3">
-					<h3>Upcoming Concepts</h3>
+					<h3>Upcoming Concerts</h3>
 					<?php 
 					$qry3=mysqli_query($con,"select * from tbl_news");				
 					while($n=mysqli_fetch_array($qry3))
@@ -21,9 +21,9 @@ include('header.php');
 					<div class="text list_1_of_2">
 						  <div class="extra-wrap">
 						  	<span style="text-color:#000" class="data"><strong><?php echo $n['name'];?></strong><br>
-						  	<span style="text-color:#000" class="data"><strong>Band :<?php echo $n['cast'];?></strong><br>
-                                <div class="data">Event Date :<?php echo $n['news_date'];?></div>          
-                                <span class="text-top"><?php echo $n['description'];?></span>
+						  	<span style="text-color:#000" class="data"><strong>Band : <?php echo $n['cast'];?></strong><br>
+						  	<span style="text-color:#000" class="data"><strong>Date : <?php echo $n['news_date'];?></strong><br>
+							<span class="text-top"><?php echo $n['description'];?></span>
                           </div>
 					</div>
 					<div class="clear"></div>

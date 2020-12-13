@@ -66,16 +66,15 @@ if(!isset($_SESSION['user']))
 									<?php echo $bkg['no_seats'];?>
 								</td>
 								<td>
-									€ <?php echo $bkg['amount'];?>
+									Rs  <?php echo $bkg['amount'];?>
 								</td>
 								<td>
 									<?php  if($bkg['ticket_date']<date('Y-m-d'))
 									{
 										?>
-										<i class="glyphicon glyphicon-ok"></i>
 										<?php
 									}
-									else
+									
 									{?>
 									<button data-toggle="modal"  data-target="#cancel" class="btn btn-danger btn-sm" data-toggle="modal"><i class="fa fa-trash"></i> <a style="color:white;     text-decoration: none;
 " href="cancel.php?id=<?php echo $bkg['book_id'];?>">Cancel</a></i></button>
@@ -122,7 +121,7 @@ if(!isset($_SESSION['user']))
 							?>
 							<tr>
 								<td>
-								€	<?php echo $prepaid['totalAmount'];?>
+								Rs 	<?php echo $prepaid['totalAmount'];?>
 								</td>
 								<td>
 									<?php echo $prepaid['lastUpdate'];?>
