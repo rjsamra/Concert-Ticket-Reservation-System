@@ -1,6 +1,4 @@
-<!--
-@author: Vasilis Tsakiris
--->
+
  			<div class="listview_1_of_3 images_1_of_3">
 					<h3>Concerts in Town</h3>	
 					<?php

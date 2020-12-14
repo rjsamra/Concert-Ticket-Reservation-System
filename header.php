@@ -1,6 +1,4 @@
-<!--
-@author: Vasilis Tsakiris
--->
+
 <?php
 include('config.php');
 session_start();
@@ -49,7 +47,7 @@ date_default_timezone_set('Europe/Athens');
 function myFunction() {
      if($('#search111').val()=="")
         {
-            alert("Please enter a concert name...");//empty searchBar field 
+            alert("Please enter a concert name...");
         }
   }
     </script>

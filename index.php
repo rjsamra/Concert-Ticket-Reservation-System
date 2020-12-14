@@ -1,6 +1,4 @@
-<!--
-@author: Vasilis Tsakiris
--->
+
 <?php
 include('header.php');
 ?>

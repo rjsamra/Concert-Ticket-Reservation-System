@@ -1,6 +1,4 @@
-<!--
-@author: Vasilis Tsakiris
--->
+
 <?php
 session_start();
 if(!isset($_SESSION['user']))
@@ -8,9 +6,9 @@ if(!isset($_SESSION['user']))
 	header('location:login.php');
 }
 $host = "127.0.0.1";
-    $user = "root";                     //Your Cloud 9 username
-    $pass = "";                                  //Remember, there is NO password by default!
-    $db = "db_concerts";                                  //Your database name you want to connect to
+    $user = "root";                   
+    $pass = "";                                 
+    $db = "db_concerts";                                
     $port = 3306;
      $con = mysqli_connect($host, $user, $pass, $db, $port)or die(mysql_error());
 extract($_POST);
@@ -61,9 +59,9 @@ mysqli_query($con,"update tbl_registration set lastUpdate=CURRENT_TIMESTAMP() wh
 <p class="form-subheading">OTP sent to your mobile number ending
  <?php
   $host = "127.0.0.1";
-    $user = "root";                     //Your  username
-    $pass = "";                                  //Remember, there is NO password by default!
-    $db = "db_concerts";                                  //Your database name you want to connect to
+    $user = "root";                   
+    $pass = "";                                  
+    $db = "db_concerts";                                  
     $port = 3306;
     $con = mysqli_connect($host, $user, $pass, $db, $port)or die(mysql_error()); 
   $qry2=mysqli_query($con,"select * from tbl_registration where user_id='".$_SESSION['user']."'");

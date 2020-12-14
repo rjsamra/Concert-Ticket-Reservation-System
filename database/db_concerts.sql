@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 25, 2018 at 06:34 PM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 5.6.35
+-- Host: localhost
+-- Generation Time: Dec 14, 2020 at 07:35 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -72,11 +71,11 @@ CREATE TABLE `tbl_concert` (
 --
 
 INSERT INTO `tbl_concert` (`concert_id`, `t_id`, `concert_name`, `cast`, `desc`, `release_date`, `image`, `video_url`, `status`) VALUES
-(1, 3, 'Metallica', 'James Hetfield,Lars Ulrich,Kirk,Hammett,Robert Trujillo', '\r\nMetallica is an American heavy metal band. The band was formed in 1981 in Los Angeles, California by drummer Lars Ulrich and vocalist/guitarist James Hetfield, and has been based in San Francisco, California for most of its career.', '2010-05-05', 'images/Metallica.png', 'https://www.youtube.com/watch?v=Ckom3gf57Yw', 0),
-(2, 4, 'Scorpions\r\n', 'Rudolf Schenker,Klaus Meine,Matthias Jabs,Pawel Maciwoda,Mikkey Dee', 'Scorpions are a German rock band formed in 1965 in Hanover by Rudolf Schenker.', '2014-07-11', 'images/Scorpions.png', 'https://www.youtube.com/watch?v=n4RjJKxsamQ', 0),
-(3, 14, 'AC/DC', 'Angus Young,Chris Slade,Stevie Young,Axl Rose', 'AC/DC are an Australian rock band, formed in Sydney in 1973 by brothers Malcolm and Angus Young.\r\n', '2013-07-01', 'images/acdc.png', 'https://www.youtube.com/watch?v=v2AC41dglnM', 0),
-(8, 3, 'Guns N Roses', 'Axl Rose,Duff McKagan,Slash,Dizzy Reed,Richard Fortus,Frank Ferrer,Melissa Reese', 'Guns N\' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles, California, formed in 1985. \r\n', '2012-07-19', 'images/gunsnroses.png', 'https://www.youtube.com/watch?v=1w7OgIMMRc4', 0),
-(14, 4, 'The Rolling Stones', 'Mick Jagger,Keith Richards,Charlie Watts,Ronnie Wood', 'The Rolling Stones are an English rock band formed in London, England in 1962.', '2013-07-12', 'images/rolling.png', 'https://www.youtube.com/watch?v=qEuV82GqQnE', 0);
+(1, 3, 'Bantai', 'Emiway Bantai', 'Emiway Bantai is an Indian Rapper ', '2021-05-05', 'images/ban.jpg', 'https://www.youtube.com/playlist?playnext=1&list=PLpfFYR2wui04JyXOVz2ebz0NVZM95iR5v&feature=gws_kp_artist', 0),
+(2, 4, 'MTvTourIndia', 'Arjit Singh', 'Arijit Sing is an Indian playback singer. He sings predominantly in Hindi and Bengali but has also performed in various other Indian ..', '2021-07-11', 'images/arjit.jpg', 'https://www.youtube.com/playlist?playnext=1&list=PLl7FgM8EYUapnCcLRRl7M-mrcYgglf66j&feature=gws_kp_artist', 0),
+(3, 14, 'gocelebclub', 'Shreya Ghoshal', 'is an Indian playback singer, composer and music producer. She has received four National Film Awards', '2021-07-01', 'images/sre.jpg', 'https://www.youtube.com/playlist?playnext=1&list=PLlokyYPRHlgaWo9oMU7EHC48da-ag-Vgq&feature=gws_kp_artist', 0),
+(8, 3, 'Goldens Hours', 'kumar Sanu,Alka Yagnik,Abhijit Da, Udit Narayan,Sadhna Sargam', '90s Playback With Goldys', '2012-07-19', 'images/gunsnroses.png', 'https://www.youtube.com/watch?v=1w7OgIMMRc4', 0),
+(14, 4, 'AmezedClub', 'Darshan Raval', ' Indian singer, composer, lyricist and actor, first on-screen appearance was in  reality show Indias Raw Star', '2021-07-12', 'images/darsh.jpg', 'https://www.youtube.com/playlist?playnext=1&list=PL1OH99AZ0m6aKZFlxjaYcHWphLtdzktHb&feature=gws_kp_artist', 0);
 
 -- --------------------------------------------------------
 
@@ -97,7 +96,8 @@ CREATE TABLE `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`id`, `user_id`, `username`, `password`, `user_type`) VALUES
-(42, 28, 'ts@hotmail.com', 'ts', 0);
+(42, 28, 'ts@hotmail.com', 'ts', 0),
+(43, 29, 'rajkumarsamra@gmail.com', '123', 0);
 
 -- --------------------------------------------------------
 
@@ -119,9 +119,9 @@ CREATE TABLE `tbl_news` (
 --
 
 INSERT INTO `tbl_news` (`news_id`, `name`, `cast`, `news_date`, `description`, `attachment`) VALUES
-(3, 'Red Hot Chili Peppers\r\n', 'Anthony Kiedis\r\n,Flea\r\n,Chad Smith\r\n,Josh Klinghoffer', '2018-10-15', 'Red Hot Chili Peppers are an American funk rock band formed in Los Angeles in 1983. \r\n\r\n\r\n\r\n', 'new/hot.png'),
-(5, 'Linkin Park', 'Rob Bourdon\r\n,Brad Delson\r\n,Mike Shinoda\r\n,Dave Farrell\r\n,Joe Hahn\r\n', '2018-11-21', 'Linkin Park is an American rock band from Agoura Hills, California. ', 'new/link.png'),
-(6, 'Green Day', 'Billie Joe ,Armstrong\r\n,Mike Dirnt\r\n,Tre Cool', '2018-10-18', 'Green Day is an American punk rock band formed in 1986 by lead vocalist and guitarist Billie Joe Armstrong and bassist Mike Dirnt. ', 'new/green.png');
+(3, 'Sonu Nigam\r\n', 'Sonu Nigam\r\n', '2021-10-15', ' track Sonu Nigam and get concert alerts when they play near you.\r\n\r\n\r\n', 'new/sonu.png'),
+(5, 'Sunburn ', 'Sunburn', '2021-11-21', ' SunBurn Arena Poster Martin Garrix. CG Art Gallery•. Follow Following Unfollow. More Like This. Add to Moodboard. Add to Moodboard.', 'new/sunburn.jpg'),
+(6, 'Neha Kakkar\r\n', 'Neha Kakkar\r\n', '2020-07-15', 'Neha Kakkar is an Indian singer. She began performing at religious events at the age of four and participated in the second season of the singing reality show, Indian Idol', 'new/neha.jpg');
 
 -- --------------------------------------------------------
 
@@ -137,7 +137,7 @@ CREATE TABLE `tbl_registration` (
   `age` int(2) NOT NULL,
   `gender` varchar(10) NOT NULL,
   `totalAmount` decimal(8,2) NOT NULL,
-  `lastUpdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `lastUpdate` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -145,7 +145,8 @@ CREATE TABLE `tbl_registration` (
 --
 
 INSERT INTO `tbl_registration` (`user_id`, `name`, `email`, `phone`, `age`, `gender`, `totalAmount`, `lastUpdate`) VALUES
-(28, 'ts', 'ts@hotmail.com', '6940000000', 12, 'Male', '1600.00', '2018-06-25 16:34:13');
+(28, 'ts', 'ts@hotmail.com', '6940000000', 12, 'Male', '1600.00', '2018-06-25 16:34:13'),
+(29, 'RAJKUMAR SAMRA', 'rajkumarsamra@gmail.com', '07588243303', 21, 'Male', '7211.00', '2020-12-14 18:32:32');
 
 -- --------------------------------------------------------
 
@@ -244,9 +245,9 @@ CREATE TABLE `tbl_stadium` (
 --
 
 INSERT INTO `tbl_stadium` (`id`, `name`, `address`, `place`, `state`) VALUES
-(3, 'OAKA', 'Amarousiou', 'Marousi', 'Athens'),
-(4, 'Panathenaic stadium', 'Kifisias', 'Kallimarmaron', 'Athens'),
-(14, 'Karaiskakis stadium', 'Lewforo Falirou', 'Neon Faliro', 'Piraeus');
+(3, 'Relplanza', 'Bkc', 'JioGarden', 'Maharashtra'),
+(4, 'Panathenaic stadium', 'RD MF ', 'Kallimarmaron', 'hyderabad'),
+(14, 'Karaiskakis stadium', 'Lewforo Falirou', 'Neon Faliro', 'Banglore');
 
 --
 -- Indexes for dumped tables
@@ -290,7 +291,7 @@ ALTER TABLE `tbl_stadium`
 -- AUTO_INCREMENT for table `tbl_login`
 --
 ALTER TABLE `tbl_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `tbl_news`
@@ -302,7 +303,7 @@ ALTER TABLE `tbl_news`
 -- AUTO_INCREMENT for table `tbl_registration`
 --
 ALTER TABLE `tbl_registration`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `tbl_screens`

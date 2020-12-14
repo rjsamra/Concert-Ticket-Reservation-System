@@ -1,6 +1,4 @@
-<!--
-@author: Vasilis Tsakiris
--->
+
 <?php
 session_start();
 $_SESSION['show']=$_GET['show'];

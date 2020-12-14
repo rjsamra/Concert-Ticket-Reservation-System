@@ -1,6 +1,4 @@
-<!--
-@author: Vasilis Tsakiris
--->
+
 <div class="footer">
 	<div class="wrap">
 			<div class="footer-top">

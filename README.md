@@ -10,11 +10,12 @@
 <p>Before run this app change the config.php file with your own informations:</p> 
 
 ```
-    $host = "localhost";
+    $host = "127.0.0.1";
     $user = "";   //change it with your username              
     $pass = "";   // change it with your password                            
     $db = "";     // change it with your db name                             
-    $con = mysqli_connect($host, $user, $pass, $db)or die(mysql_error());
+    $port = 3306;
+    $con = mysqli_connect($host, $user, $pass, $db, $port)or die(mysql_error());
 ```
 
 <p>Set ut the db from the dump file.</p>

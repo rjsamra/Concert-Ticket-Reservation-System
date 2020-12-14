@@ -1,13 +1,9 @@
-<!--
-@author: Vasilis Tsakiris
--->
+
 <?php include('header.php');
 	$qry2=mysqli_query($con,"select * from tbl_concert where concert_id='".$_GET['id']."'");
 	$concert=mysqli_fetch_array($qry2);
 	?>
-	    <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 <div class="content">
 	<div class="wrap">
